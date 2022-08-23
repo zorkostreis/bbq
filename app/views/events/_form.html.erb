@@ -1,27 +1,27 @@
 <%= form_with(model: event) do |form| %>
   <%= render partial: 'partials/form_errors', locals: {model: event} %>
 
-  <div class="mt-2">
-    <%= form.label :title %>
+  <div class='mt-2'>
+    <%= form.label :title, 'Название' %>
     <%= form.text_field :title, class: 'form-control' %>
   </div>
 
-  <div class="mt-2">
-    <%= form.label :address %>
+  <div class='mt-2'>
+    <%= form.label :address, 'Адрес' %>
     <%= form.text_field :address, class: 'form-control' %>
   </div>
 
-  <div class="mt-2">
-    <%= form.label :datetime %>
+  <div class='mt-2'>
+    <%= form.label :datetime, 'Дата и время' %>
     <p><%= form.datetime_select :datetime, class: 'form-control' %></p>
   </div>
 
-  <div class="mt-2 mb-2">
-    <%= form.label :description %>
+  <div class='mt-2'>
+    <%= form.label :description, 'Описание' %>
     <%= form.text_area :description, class: 'form-control' %>
   </div>
 
-  <div class="actions">
+  <div class='actions mt-3'>
     <%= form.submit 'Сохранить', class: 'btn btn-primary' %>
     или <%= link_to 'вернуться', :back %>
   </div>
