@@ -33,3 +33,4 @@ ru:
     one: '%{count} ошибки'
     few: '%{count} ошибок'
     many: '%{count} ошибок'
+  are_you_sure: 'Точно удалить событие?'
