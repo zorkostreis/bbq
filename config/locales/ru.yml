@@ -33,4 +33,3 @@ ru:
     one: '%{count} ошибки'
     few: '%{count} ошибок'
     many: '%{count} ошибок'
- 
