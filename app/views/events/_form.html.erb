@@ -2,27 +2,27 @@
   <%= render partial: 'partials/form_errors', locals: {model: event} %>
 
   <div class='mt-2'>
-    <%= form.label :title, 'Название' %>
+    <%= form.label :title %>
     <%= form.text_field :title, class: 'form-control' %>
   </div>
 
   <div class='mt-2'>
-    <%= form.label :address, 'Адрес' %>
+    <%= form.label :address %>
     <%= form.text_field :address, class: 'form-control' %>
   </div>
 
   <div class='mt-2'>
-    <%= form.label :datetime, 'Дата и время' %>
+    <%= form.label :datetime %>
     <p><%= form.datetime_select :datetime, class: 'form-control' %></p>
   </div>
 
   <div class='mt-2'>
-    <%= form.label :description, 'Описание' %>
+    <%= form.label :description %>
     <%= form.text_area :description, class: 'form-control' %>
   </div>
 
   <div class='actions mt-3'>
     <%= form.submit 'Сохранить', class: 'btn btn-primary' %>
-    или <%= link_to 'вернуться', :back %>
+      или <%= link_to 'вернуться', :back %>
   </div>
 <% end %>

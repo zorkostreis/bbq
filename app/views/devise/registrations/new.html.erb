@@ -13,7 +13,7 @@
         </div>
 
         <div class='mb-3'>
-          <%= f.label :password, 'Пароль', class: 'mb-1' %>
+          <%= f.label :password, class: 'mb-1' %>
           <% if @minimum_password_length %>
           <em>(не менее <%= @minimum_password_length %> символов)</em>
           <% end %>
@@ -21,7 +21,7 @@
         </div>
         
         <div class='mb-3'>
-          <%= f.label :password_confirmation, 'Подтверждение пароля', class: 'mb-1'  %>
+          <%= f.label :password_confirmation, class: 'mb-1'  %>
           <%= f.password_field :password_confirmation, autocomplete: 'new-password', class: 'form-control' %>
         </div>
 

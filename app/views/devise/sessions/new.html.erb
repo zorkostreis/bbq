@@ -12,14 +12,14 @@
         </div>
 
         <div class='mb-2'>
-          <%= f.label :password, 'Пароль', class: 'mb-1' %><br />
+          <%= f.label :password, class: 'mb-1' %><br />
           <%= f.password_field :password, autocomplete: 'current-password', class: 'form-control' %>
         </div>
 
         <% if devise_mapping.rememberable? %>
           <div class='form-check mb-3'>
             <%= f.check_box :remember_me, class: 'form-check-input' %>
-            <%= f.label :remember_me, 'Запомнить меня', class: 'form-check-label' %>
+            <%= f.label :remember_me, class: 'form-check-label' %>
           </div>
         <% end %>
 
