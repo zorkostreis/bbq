@@ -24,13 +24,36 @@ ru:
       updated: 'Вы обновили профиль.'
   app:
     name: 'Шашлыки'
-  devise:
-    links:
-      sign_up: 'Зарегистрироваться'
-      forgot_password: 'Забыли пароль?'
-      log_in: 'Войти'
   error:
     one: '%{count} ошибки'
     few: '%{count} ошибок'
     many: '%{count} ошибок'
-  are_you_sure: 'Точно удалить событие?'
+  are_you_sure: 'Вы уверены?'
+  error_messages:
+    not_saved: 'Сохранение не удалось из-за %{errors}:'
+  buttons:
+    save: 'Сохранить'
+    back: 'Вернуться назад'
+    delete_account: 'Удалить аккаунт'
+    edit_account: 'Редактировать аккаунт'
+    profile: 'Профиль'
+    log_out: 'Выйти'
+    log_in: 'Войти'
+    sign_up: 'Зарегистрироваться'
+    forgot_password: 'Забыли пароль?'
+    event: 
+      edit: 'Редактировать событие'
+      create: 'Создать событие'
+      delete: 'Удалить событие'
+  headings:
+    events: 'События'
+    new_event: 'Новое событие'
+    event_editing: 'Редактирование события'
+    login: 'Вход'
+    registration: 'Регистрация'
+    account_editing: 'Редактирование аккаунта'
+  need_current_password: 'введите текущий пароль для подтверждения изменений'
+  leave_blank: 'оставьте поле пустым, если не хотите его менять'
+  characters_minimum: '%{length} символов минимум'
+  organized: 'Организовал:'
+  user_organized_no_events: 'Пользователь пока не организовал ни одного события'

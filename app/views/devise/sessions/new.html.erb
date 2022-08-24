@@ -1,7 +1,7 @@
 <div class='d-flex justify-content-center row'>
   <div class='card col-md-4 p-0'>
     <div class='card-header text-center'>
-      <h3>Вход</h3>
+      <h3><%= I18n.t('headings.login') %></h3>
     </div>
     
     <div class='card-body p-4'>
@@ -24,7 +24,7 @@
         <% end %>
 
         <div class='actions mb-3'>
-          <%= f.submit 'Войти', class: 'btn btn-primary' %>
+          <%= f.submit t('buttons.log_in'), class: 'btn btn-primary' %>
         </div>
       <% end %>
 

@@ -1,12 +1,18 @@
 <div class='d-flex justify-content-center row'>
   <div class='card col-md-4 p-0'>
     <div class='card-header text-center'>
-      <h3>Регистрация</h3>
+      <h3><%= I18n.t('headings.registration') %></h3>
     </div>
     
     <div class='card-body p-4'>
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
         <%= render 'devise/shared/error_messages', resource: resource %>
+
+        <div class='mb-3'>
+          <%= f.label :name, class: 'mb-1' %>
+          <%= f.text_field :name, autofocus: true, autocomplete: 'name', class: 'form-control' %>
+        </div>
+
         <div class='mb-3'>
           <%= f.label :email, class: 'mb-1' %>
           <%= f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control' %>
@@ -15,7 +21,7 @@
         <div class='mb-3'>
           <%= f.label :password, class: 'mb-1' %>
           <% if @minimum_password_length %>
-          <em>(не менее <%= @minimum_password_length %> символов)</em>
+            (<em><%= I18n.t('characters_minimum', length: @minimum_password_length) %></em>)
           <% end %>
         <%= f.password_field :password, autocomplete: 'new-password', class: 'form-control' %>
         </div>
@@ -26,7 +32,7 @@
         </div>
 
         <div class='actions mb-3'>
-          <%= f.submit 'Зарегистрироваться', class: 'btn btn-primary' %>
+          <%= f.submit t('buttons.sign_up'), class: 'btn btn-primary' %>
         </div>
       <% end %>
 

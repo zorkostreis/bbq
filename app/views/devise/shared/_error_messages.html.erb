@@ -1,7 +1,8 @@
 <% if resource.errors.any? %>
-  <div id="error_explanation" class="alert alert-danger">
-    <h5>Сохранение не удалось из-за <%= I18n.t :error, count: resource.errors.count %>:</h5>
-    
+  <div id='error_explanation' class='alert alert-danger'>
+    <h5><%= I18n.t('error_messages.not_saved',
+      errors: (I18n.t :error, count: resource.errors.count)) %></h5>
+
     <ul>
       <% resource.errors.each do |error| %>
         <li><%= error.full_message %></li>
