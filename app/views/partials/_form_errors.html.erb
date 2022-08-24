@@ -2,7 +2,7 @@
 
 <% if errors.any? %>
   <div id="error_explanation" class="alert alert-danger">
-    <h5><%= pluralize(errors.count, "error") %> prohibited this user from being saved:</h2>
+    <h5>Сохранение не удалось из-за <%= I18n.t :error, count: errors.count %>:</h2>
 
     <ul>
       <% errors.each do |error| %>

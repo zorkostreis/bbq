@@ -29,3 +29,8 @@ ru:
       sign_up: 'Зарегистрироваться'
       forgot_password: 'Забыли пароль?'
       log_in: 'Войти'
+  error:
+    one: '%{count} ошибки'
+    few: '%{count} ошибок'
+    many: '%{count} ошибок'
+ 

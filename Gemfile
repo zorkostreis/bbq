@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'devise'
 gem 'devise-i18n'
-gem 'russian'
+gem 'rails-i18n'
 gem 'rails', '~> 6.1.6', '>= 6.1.6.1'
 gem 'puma', '~> 5.0'
 gem 'sass-rails', '>= 6'
