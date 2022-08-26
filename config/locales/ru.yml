@@ -93,4 +93,6 @@ ru:
     labels:
       email: 'Email'
       user_name: 'Ваше имя'
+    errors:
+     cannot_sub_to_your_own_event: 'не может подписаться на своё событие.'
     
