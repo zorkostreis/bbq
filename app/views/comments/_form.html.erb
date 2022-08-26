@@ -1,19 +1,19 @@
 <%= form_for [@event, comment] do |f| %>
   <%= render partial: 'partials/form_errors', locals: {model: comment} %>
 
-  <div class='form-group'>
-    <%= f.label :body %>
+  <div class='mb-3'>
+    <%= f.label :body, t('comments.labels.body'), class: 'mb-1' %>
     <%= f.text_area :body, class: 'form-control' %>
   </div>
 
   <% unless user_signed_in? %>
-      <div class='form-group'>
-        <%= f.label :user_name %>
+      <div class='mb-3'>
+        <%= f.label :user_name, t('comments.labels.user_name'), class: 'mb-1' %>
         <%= f.text_field :user_name, class: 'form-control' %>
       </div>
   <% end %>
 
-  <div class='actions'>
-    <%= f.submit 'Отправить', class: 'btn btn-primary' %>
+  <div class='actions mb-3'>
+    <%= f.submit t('buttons.save'), class: 'btn btn-primary' %>
   </div>
 <% end %>

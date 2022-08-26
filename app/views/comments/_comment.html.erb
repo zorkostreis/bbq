@@ -1,6 +1,6 @@
-<div class='mb-2'>
+<div class='border border-secondary p-3 border-opacity-50 rounded mb-2'>
   <p><%= comment.body %></p>
-  <p>
+  <div>
     <span>
       <% if comment.user.present? %>
         <%= render partial: 'users/user', object: comment.user %>
@@ -13,5 +13,5 @@
       <%= link_to(fa_icon('trash'), event_comment_path(comment.event, comment),
         method: :delete, data: {confirm: t('.destroy_confirm')}) %>
     <% end %>
-  </p>
+  </div>
 </div>
