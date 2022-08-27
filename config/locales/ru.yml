@@ -3,6 +3,8 @@ ru:
     models:
       user: 'Пользователь'
       event: 'Событие'
+      comment: 'Комментарий'
+      subscription: 'Подписка'
       photo: 'Фотография'
     
     attributes:
@@ -110,4 +112,3 @@ ru:
 
   photos:
     added: 'добавил'
-    
