@@ -3,7 +3,8 @@ ru:
     models:
       user: 'Пользователь'
       event: 'Событие'
-
+      photo: 'Фотография'
+    
     attributes:
       user:
         email: 'Email'
@@ -22,6 +23,8 @@ ru:
       comment:
         user_name: 'Ваше имя'
         body: 'Комментарий'
+      photo:
+        photo: 'Фотография'
   
   controllers:
     events:
@@ -38,6 +41,10 @@ ru:
       created: 'Вы подписались на это событие.'
       destroyed: 'Участник отписан.'
       error: 'Подписка/отписка не сработала.'
+    photos:
+      error: 'Не удалось загрузить фото.'
+      created: 'Вы добавили фотографию к событию.'
+      destroyed: 'Вы удалили фото.'
 
   app:
     name: 'Шашлыки'
@@ -53,6 +60,7 @@ ru:
   
   buttons:
     save: 'Сохранить'
+    upload: 'Загрузить'
     back: 'Вернуться назад'
     delete_account: 'Удалить аккаунт'
     edit_account: 'Редактировать аккаунт'
@@ -99,3 +107,7 @@ ru:
     errors:
      cannot_sub_to_your_own_event: 'не может подписаться на своё событие.'
      already_registered: 'уже зарегистрирован.'
+
+  photos:
+    added: 'добавил'
+    
