@@ -57,6 +57,8 @@ ru:
     sign_up: 'Зарегистрироваться'
     forgot_password: 'Забыли пароль?'
     subscribe: 'Подписаться'
+    delete_comment: 'Удалить комментарий'
+    unsubscribe: 'Отписать'
     event: 
       edit: 'Редактировать событие'
       create: 'Создать событие'
@@ -95,4 +97,4 @@ ru:
       user_name: 'Ваше имя'
     errors:
      cannot_sub_to_your_own_event: 'не может подписаться на своё событие.'
-    
+     
