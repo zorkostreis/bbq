@@ -7,6 +7,7 @@ class Subscription < ApplicationRecord
 
   validates :user, uniqueness: { scope: :event_id }, if: -> { user.present? }
   validates :user_email, uniqueness: { scope: :event_id }, unless: -> { user.present? }
+  validate :user_email_not_registered, unless: -> { user.present? }
   validate :user_not_event_organizer
 
   def user_name
@@ -26,6 +27,12 @@ class Subscription < ApplicationRecord
   end
 
   private
+
+  def user_email_not_registered
+    if User.find_by(email: user_email).present?
+      errors.add(:user_email, I18n.t('subscriptions.errors.already_registered'))
+    end
+  end
 
   def user_not_event_organizer
     if event.user == user

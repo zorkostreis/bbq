@@ -97,4 +97,4 @@ ru:
       user_name: 'Ваше имя'
     errors:
      cannot_sub_to_your_own_event: 'не может подписаться на своё событие.'
-     
+     already_registered: 'уже зарегистрирован.'
