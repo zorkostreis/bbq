@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+gem 'carrierwave'
+gem 'rmagick'
 gem 'devise'
 gem 'devise-i18n'
 gem 'rails-i18n'

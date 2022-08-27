@@ -8,6 +8,7 @@ ru:
       user:
         email: 'Email'
         name: 'Имя'
+        avatar: 'Аватар'
         password: 'Пароль'
         password_confirmation: 'Подтверждение пароля'
       event:
@@ -15,6 +16,12 @@ ru:
         address: 'Место проведения'
         datetime: 'Дата и время'
         description: 'Описание'
+      subscription:
+        user_name: 'Ваше имя'
+        user_email: 'Email'
+      comment:
+        user_name: 'Ваше имя'
+        body: 'Комментарий'
   
   controllers:
     events:
@@ -85,16 +92,10 @@ ru:
   comments:
     comment:
       destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
-    labels:
-      body: 'Комментарий'
-      user_name: 'Ваше имя'
   
   subscriptions:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
-    labels:
-      email: 'Email'
-      user_name: 'Ваше имя'
     errors:
      cannot_sub_to_your_own_event: 'не может подписаться на своё событие.'
      already_registered: 'уже зарегистрирован.'
