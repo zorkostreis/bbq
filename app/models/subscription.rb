@@ -11,19 +11,11 @@ class Subscription < ApplicationRecord
   validate :user_not_event_organizer
 
   def user_name
-    if user.present?
-      user.name
-    else
-      super
-    end
+    user.present? ? user.name : super
   end
   
   def user_email
-    if user.present?
-      user.email
-    else
-      super
-    end
+    user.present? ? user.email : super
   end
 
   private
