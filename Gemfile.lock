@@ -195,7 +195,7 @@ GEM
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     sqlite3 (1.4.4)
-    ssrf_filter (1.0.8)
+    ssrf_filter (1.1.0)
     strscan (3.0.4)
     thor (1.2.1)
     tilt (2.0.11)
