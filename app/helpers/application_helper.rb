@@ -1,15 +1,29 @@
 module ApplicationHelper
+  # bootstrap icon
+
+  def bi_icon(icon_class)
+    content_tag 'span', '', class: "bi bi-#{icon_class}"
+  end
+
+  # user_avatar
+
   def user_avatar(user)
-    if user.avatar?
-      user.avatar.url
+    if user.avatar.attached?
+      user.avatar.variant(resize_to_fit: [400, 400])
     else
       asset_path('avatar.png')
     end
   end
 
-  def bi_icon(icon_class)
-    content_tag 'span', '', class: "bi bi-#{icon_class}"
+  def user_avatar_thumb(user)
+    if user.avatar.attached?
+      user.avatar.variant(resize_to_fit: [50, 50])
+    else
+      asset_path('avatar.png')
+    end
   end
+
+  # event_photo
 
   def event_photo(event)
     photos = event.photos.persisted
@@ -28,14 +42,6 @@ module ApplicationHelper
       photos.sample.photo.thumb.url
     else
       asset_path('event_thumb.jpg')
-    end
-  end
-
-  def user_avatar_thumb(user)
-    if user.avatar.file.present?
-      user.avatar.thumb.url
-    else
-      asset_path('avatar.png')
     end
   end
 end

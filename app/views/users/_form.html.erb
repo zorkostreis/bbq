@@ -13,7 +13,7 @@
 
   <div class='mb-3'>
     <%= form.label :avatar, class: 'mb-1' %>
-    <p><%= image_tag(@user.avatar.thumb.url) if @user.avatar? %></p>
+    <p><%= image_tag user_avatar(@user) if @user.avatar.attached? %></p>
     <%= form.file_field :avatar, class: 'form-control' %>
   </div>
 
