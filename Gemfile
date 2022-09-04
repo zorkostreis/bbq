@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+gem 'dotenv-rails'
+gem 'mailjet'
 gem 'aws-sdk-s3'
 gem 'image_processing', '~> 1.0'
 gem 'devise'
@@ -17,6 +19,7 @@ gem 'net-imap', require: false
 gem 'net-pop', require: false
 
 group :development do
+  gem 'letter_opener'
   gem 'sqlite3', '~> 1.4'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'listen', '~> 3.3'

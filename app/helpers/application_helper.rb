@@ -19,7 +19,7 @@ module ApplicationHelper
     if user.avatar.attached?
       user.avatar.variant(resize_to_fit: [50, 50])
     else
-      asset_path('avatar.png')
+      asset_path('avatar_thumb.png')
     end
   end
 end

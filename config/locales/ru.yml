@@ -112,3 +112,21 @@ ru:
 
   photos:
     added: 'добавил'
+  
+  event_mailer:
+    comment:
+      title: 'Новый комментарий'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Состоится'
+      owner: 'Организатор'
+    subscription:
+      title: 'Новая подписка'
+      name: 'Имя'
+      email: 'Email'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Состоится'
+      owner: 'Организатор'
+    new_subscription: 'Новая подписка на'
+    new_comment: 'Новый комментарий @'
