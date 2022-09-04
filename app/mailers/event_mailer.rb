@@ -1,9 +1,9 @@
 class EventMailer < ApplicationMailer
-  default from: ENV['MAILJET_SENDER']
+  default from: Rails.application.credentials.dig(:mailjet, :sender)
  
   def subscription(event, subscription)
     @email = subscription.user_email
-    @greeting = subscription.user_name
+    @name = subscription.user_name
     @event = event
 
     mail to: event.user.email, subject: "#{I18n.t('event_mailer.new_subscription')} #{@event.title}"
