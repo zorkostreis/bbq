@@ -5,4 +5,6 @@ class Photo < ApplicationRecord
   has_one_attached :photo
 
   scope :persisted, -> { where "id IS NOT NULL" }
+  
+  validates :photo, presence: true
 end
