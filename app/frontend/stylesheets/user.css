@@ -2,3 +2,7 @@
   margin-top: -2px;
   height: 20px;
 }
+
+.circle {
+  border-radius: 100%;
+}

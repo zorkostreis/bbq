@@ -17,7 +17,7 @@ module ApplicationHelper
 
   def user_avatar_thumb(user)
     if user.avatar.attached?
-      user.avatar.variant(resize_to_fit: [50, 50])
+      user.avatar.variant(resize_to_fill: [50, 50])
     else
       asset_path('avatar_thumb.png')
     end
