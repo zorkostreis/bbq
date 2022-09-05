@@ -12,7 +12,7 @@ class EventMailer < ApplicationMailer
   def comment(comment, email)
     @comment = comment
     @event = comment.event
-
+    byebug
     mail to: email, subject: "#{I18n.t('event_mailer.new_comment')} #{@event.title}"
   end
 
