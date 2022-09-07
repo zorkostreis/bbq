@@ -26,6 +26,7 @@
       </div>
     </div>
   </div>
+
   <div class='row'>
     <div class='col-md-8'>
       <div class='event-photos'>
@@ -60,6 +61,12 @@
           </div>
         </div>
       <% end %>
+
+      <div>
+        <h4><%= I18n.t('headings.address') %></h4>
+        <div id='map' data-address='<%= @event.address %>' class='map'></div>
+      <div>
+
       <% unless current_user_can_edit?(@event) %>
         <div class='event-subscription-form'>
           <h4><%= I18n.t('headings.join') %></h4>

@@ -94,6 +94,7 @@ ru:
     organized: 'Организовал:'
     will_attend: 'Пойдут:'
     enter_new_password: 'Введите новый пароль'
+    address: 'Адрес'
   
   need_current_password: 'введите текущий пароль для подтверждения изменений'
   leave_blank: 'оставьте поле пустым, если не хотите его менять'
