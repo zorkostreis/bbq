@@ -75,6 +75,7 @@ ru:
     forgot_password: 'Забыли пароль?'
     subscribe: 'Подписаться'
     delete_comment: 'Удалить комментарий'
+    delete_photo: 'Удалить фото'
     unsubscribe: 'Отписать'
     event: 
       edit: 'Редактировать событие'
@@ -116,6 +117,7 @@ ru:
 
   photos:
     added: 'добавил'
+    destroy_confirm: 'Вы уверены, что хотите удалить это фото?'
   
   event_mailer:
     comment:
