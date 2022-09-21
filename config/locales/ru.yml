@@ -143,4 +143,6 @@ ru:
     new_subscription: 'Новая подписка на'
     new_comment: 'Новый комментарий @'
     new_photo: 'Новое фото @'
-    
+  
+  pundit:
+    not_authorized: 'Вам туда нельзя!'
