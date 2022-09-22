@@ -19,6 +19,12 @@ gem 'net-imap', require: false
 gem 'net-pop', require: false
 
 group :development do
+  gem 'capistrano', '3.17.1'
+  gem 'capistrano-rails'
+  gem 'capistrano-passenger'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
+  
   gem 'letter_opener'
   gem 'sqlite3', '~> 1.4'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
