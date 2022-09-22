@@ -19,6 +19,8 @@ ru:
         address: 'Место проведения'
         datetime: 'Дата и время'
         description: 'Описание'
+        pincode: 'Пин-код доступа'
+
       subscription:
         user_name: 'Ваше имя'
         user_email: 'Email'
@@ -33,6 +35,7 @@ ru:
       created: 'Событие было успешно создано.'
       updated: 'Вы обновили мероприятие.'
       destroyed: 'Вы удалили мероприятие.'
+      wrong_pincode: 'Неверный пин-код!'
     users:
       updated: 'Вы обновили профиль.'
     comments:
@@ -77,6 +80,7 @@ ru:
     delete_comment: 'Удалить комментарий'
     delete_photo: 'Удалить фото'
     unsubscribe: 'Отписать'
+    to_root: 'На главную'
     event: 
       edit: 'Редактировать событие'
       create: 'Создать событие'
@@ -98,6 +102,7 @@ ru:
     address: 'Адрес'
     photos: 'Фотографии события'
     comments: 'Комментарии'
+    pincode_needed: 'Доступ только по пин-коду'
   
   need_current_password: 'введите текущий пароль для подтверждения изменений'
   leave_blank: 'оставьте поле пустым, если не хотите его менять'
@@ -146,3 +151,5 @@ ru:
   
   pundit:
     not_authorized: 'Вам туда нельзя!'
+
+  pincode: 'Пин-код'

@@ -21,6 +21,11 @@
     <%= form.text_area :description, class: 'form-control' %>
   </div>
 
+  <div class='mb-3'>
+    <%= form.label :pincode, class: 'mb-1' %>
+    <%= form.text_field :pincode, class: 'form-control' %>
+  </div>
+
   <div class='actions mb-3'>
     <%= form.submit t('buttons.save'), class: 'btn btn-primary' %>
     <%= link_to t('buttons.back'), :back, class: 'btn btn-outline-secondary' %>
