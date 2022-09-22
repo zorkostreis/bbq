@@ -3,10 +3,10 @@ class EventPolicy < ApplicationPolicy
     return true if @record.pincode.blank? || update?
 
     if @user.pincode.present? && @record.pincode_valid?(@user.pincode)
-      @user.cookies.permanent["events_#{@record.id}_pincode"] = @user.pincode
+      @user.cookies["events_#{@record.id}_pincode"] = @user.pincode
     end
 
-    pincode = @user.cookies.permanent["events_#{@record.id}_pincode"]
+    pincode = @user.cookies["events_#{@record.id}_pincode"]
 
     @record.pincode_valid?(pincode)
   end

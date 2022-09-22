@@ -33,13 +33,3 @@ class ApplicationController < ActionController::Base
     redirect_to(request.referrer || root_path)
   end
 end
-
-class UserContext
-  attr_reader :user, :cookies, :pincode
-
-  def initialize(user, cookies, pincode)
-    @user = user
-    @cookies = cookies
-    @pincode = pincode
-  end
-end

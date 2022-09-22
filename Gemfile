@@ -26,8 +26,11 @@ group :development do
   gem 'capistrano-bundler'
   gem 'ed25519', '>= 1.2', '< 2.0'
   gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
-
   gem 'letter_opener'
+end
+
+group :development, :test do
+  gem 'factory_bot_rails'
   gem 'sqlite3', '~> 1.4'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
