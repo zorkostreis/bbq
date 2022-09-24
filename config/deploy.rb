@@ -1,7 +1,7 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.17.1"
 
-set :application, 'www'
+set :application, 'bbq'
 set :repo_url, 'https://github.com/zorkostreis/bbq'
 set :branch, 'capistrano-deploy'
 set :deploy_to, '/home/deploy/www'
