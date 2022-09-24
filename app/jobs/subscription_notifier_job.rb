@@ -5,4 +5,3 @@ class SubscriptionNotifierJob < ApplicationJob
     EventMailer.subscription(event, subscription).deliver_now
   end
 end
-  
