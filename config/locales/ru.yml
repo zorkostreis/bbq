@@ -74,6 +74,7 @@ ru:
     profile: 'Профиль'
     log_out: 'Выйти'
     log_in: 'Войти'
+    oauth_log_in: 'Войти через %{provider}'
     sign_up: 'Зарегистрироваться'
     forgot_password: 'Забыли пароль?'
     subscribe: 'Подписаться'
@@ -153,3 +154,6 @@ ru:
     not_authorized: 'Вам туда нельзя!'
 
   pincode: 'Пин-код'
+
+  omniauth_callbacks:
+    failure: 'Не удалось войти через %{kind}.'

@@ -6,18 +6,21 @@ gem 'aws-sdk-s3'
 gem 'image_processing', '~> 1.0'
 gem 'devise'
 gem 'devise-i18n'
+gem 'omniauth'
+gem 'omniauth-github', github: 'omniauth/omniauth-github', branch: 'master'
+gem "omniauth-rails_csrf_protection"
 gem 'rails-i18n'
 gem 'rails', '~> 6.1.6', '>= 6.1.6.1'
 gem 'resque'
 gem 'puma', '~> 5.0'
 gem 'pundit'
 gem 'sass-rails', '>= 6'
-gem 'webpacker', '~> 5.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'net-smtp', require: false
 gem 'net-imap', require: false
 gem 'net-pop', require: false
+gem 'webpacker', '~> 5.0'
 
 group :development do
   gem 'capistrano', '3.17.1'
