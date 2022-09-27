@@ -22,4 +22,8 @@ module ApplicationHelper
       asset_path('avatar_thumb.png')
     end
   end
+
+  def provider_compact(provider)
+    provider == :google_oauth2 ? 'Google' : provider
+  end
 end

@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   devise :database_authenticatable, :registerable, :recoverable, :rememberable, :validatable,
-    :omniauthable, omniauth_providers: %i[github]
+    :omniauthable, omniauth_providers: %i[github google_oauth2]
   has_many :events
   has_many :comments, dependent: :destroy
   has_many :subscriptions, dependent: :destroy
@@ -10,7 +10,7 @@ class User < ApplicationRecord
 
   after_commit :link_subscriptions, on: :create
 
-  def self.find_for_github_oauth(access_token)
+  def self.find_for_oauth(access_token)
     email = access_token.info.email
     name = access_token.info.name
     user = where(email: email).first
