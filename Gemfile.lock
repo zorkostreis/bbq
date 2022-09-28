@@ -115,6 +115,7 @@ GEM
     concurrent-ruby (1.1.10)
     connection_pool (2.3.0)
     crass (1.0.6)
+    date (3.2.2)
     devise (4.8.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -232,6 +233,10 @@ GEM
     omniauth-rails_csrf_protection (1.0.1)
       actionpack (>= 4.2)
       omniauth (~> 2.0)
+    open-uri (0.2.0)
+      stringio
+      time
+      uri
     orm_adapter (0.5.0)
     pg (1.4.3)
     public_suffix (5.0.0)
@@ -357,9 +362,12 @@ GEM
     sshkit (1.21.3)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
+    stringio (3.0.2)
     strscan (3.0.4)
     thor (1.2.1)
     tilt (2.0.11)
+    time (0.2.0)
+      date
     timeout (0.3.0)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
@@ -369,6 +377,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8.2)
+    uri (0.11.0)
     version_gem (1.1.1)
     warden (1.2.9)
       rack (>= 2.0.9)
@@ -411,6 +420,7 @@ DEPENDENCIES
   omniauth-github!
   omniauth-google-oauth2
   omniauth-rails_csrf_protection
+  open-uri
   pg
   puma (~> 5.0)
   pundit
