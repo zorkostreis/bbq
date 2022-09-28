@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   devise :database_authenticatable, :registerable, :recoverable, :rememberable, :validatable,
     :omniauthable, omniauth_providers: %i[github google_oauth2]
-  has_many :events, dependent: :delete_all
+  has_many :events
   has_many :comments, dependent: :destroy
   has_many :subscriptions, dependent: :destroy
   has_one_attached :avatar
@@ -23,8 +23,6 @@ class User < ApplicationRecord
     where(uid: uid, provider: provider).first_or_create! do |user|
       user.email = email
       user.name = name
-      image = URI.parse(access_token.info.image).open
-      user.avatar.attach(io: image, filename: 'avatar.jpeg')
       user.password = Devise.friendly_token.first(16)
     end
   end
